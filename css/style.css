@@ -169,7 +169,6 @@ main > p{
     }
 
     .main-container{
-    
         padding: 0 20px;
         background-color: var(--White);
         
@@ -240,7 +239,11 @@ main > p{
         display: none;
     }
 
-    .desktop-img {
+    .desktop-img{
+        display: none;
+        height: 100%;
+    }
+    .desktop-img2{
         display: block;
         height: 100%;
     }
