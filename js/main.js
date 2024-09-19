@@ -3,7 +3,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const smlAndMedScreen = document.querySelector(".main-container");
 const success = document.querySelector(".success-msg-section");
-const dismiss = document.querySelector(".dismiss-msg");
+const dismissBtn = document.querySelector(".dismiss-msg");
 const email = document.querySelector(".user-email");
 
 button.addEventListener("click", function(e){
@@ -24,12 +24,11 @@ button.addEventListener("click", function(e){
     }
 });
 
-dismiss.addEventListener("click", function(){
-    smlAndMedScreen.style.display = "flex";
+dismissBtn.addEventListener("click", function(){
+    smlAndMedScreen.style.display = "grid";
     success.style.display = "none";
     input.value = " ";
-
-    resetInputStyles()
+    resetInputStyles();
    
 });
 ["click", "input"].forEach(e => input.addEventListener(e, function(){
